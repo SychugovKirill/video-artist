@@ -1,0 +1,11 @@
+.subtitle {
+  font-family: $first-font;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  text-shadow: 0px 4px 14px rgba(254, 210, 48, 0.4);
+  background: linear-gradient(-45deg, #FED230 0%, #FE8730 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
