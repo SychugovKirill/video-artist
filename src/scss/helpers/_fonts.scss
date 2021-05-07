@@ -1,3 +1,18 @@
 @font-face {
   @include includeFont(200, $first-font, "Montserrat-Thin");
 }
+@font-face {
+  @include includeFont(800, $first-font, "Montserrat-ExtraBold");
+}
+@font-face {
+  @include includeFont(400, $second-font, "Ubuntu-Regular");
+}
+@font-face {
+  @include includeFont(500, $second-font, "Ubuntu-Medium");
+}
+@font-face {
+  @include includeFont(700, $second-font, "Ubuntu-bold");
+}
+@font-face {
+  @include includeFont(700, $third-font, "Helvetica-Bold");
+}
