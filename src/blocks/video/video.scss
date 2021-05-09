@@ -1,0 +1,35 @@
+.video {
+  position: relative;
+  overflow: hidden;
+  line-height: 0;
+  background-color: #c4c4c4;
+  border-radius: 40px;
+  box-shadow: 100px 74px 94px rgba(0, 0, 0, 0.21), 0 0 0 4px #000000;
+}
+
+.video__img {
+  object-fit: cover;
+}
+
+.video__play {
+  width: 10.7vw;
+  height: 10.7vw;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #000000;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.44);
+
+  & svg {
+    width: 13%;
+    height: 18%;
+    fill: #fed230;
+    margin-left: 3px;
+  }
+}
+
