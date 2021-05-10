@@ -1,0 +1,66 @@
+.card-advantage {
+  border: 0.946328px solid $first-color;
+  border-radius: 14.1949px;
+  padding: 10.4px;
+  display: flex;
+}
+
+.card-advantage__inner {
+  padding: 5px 28px;
+  padding-top: 35px;
+  background-color: #FFFFFF;
+  border: 3.78531px solid $first-color;
+  border-radius: 9.46328px;
+}
+
+.card-advantage__box {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+
+.card-advantage__icon {
+  width: 70px;
+  height: 70px;
+  margin-left: -20px;
+  margin-top: -10px;
+}
+
+.card-advantage__name {
+  font-family: $first-font;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+  max-width: 200px;
+  margin-left: 10px;
+}
+
+.card-advantage__list {
+  @include list-reset;
+}
+
+.card-advantage__item {
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
+.card-advantage__text {
+  font-size: 14px;
+  line-height: 120%;
+  letter-spacing: 0.01em;
+  color: #4D4D4D;
+  display: flex;
+
+  &::before {
+    @include pseudo;
+    background-image: url("/img/tick.svg");
+    background-size: cover;
+    width: 16px;
+    min-width: 16px;
+    height: 14px;
+    margin-right: 10px;
+    margin-top: 4px;
+  }
+}

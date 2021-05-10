@@ -1,0 +1,21 @@
+.advantages {
+  padding: 30px 15px;
+  background: linear-gradient(0deg, #F2F2F2, #F2F2F2);
+}
+
+.advantages__title {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.advantages__list {
+  @include list-reset;
+}
+
+.advantages__item {
+  min-height: 335px;
+
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
