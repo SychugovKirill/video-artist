@@ -17,4 +17,7 @@
   margin-bottom: 25px;
 }
 
-
+.programs__list {
+  @include list-reset;
+  margin-bottom: 30px;
+}
