@@ -15,9 +15,26 @@
   text-align: center;
   letter-spacing: 0.02em;
   margin-bottom: 25px;
+  padding: 0 15%;
 }
 
 .programs__list {
   @include list-reset;
   margin-bottom: 30px;
+  display: flex;
+  align-items: flex-start;
+  overflow: hidden;
+}
+
+.programs__item {
+  min-width: 100%;
+  width: 100%;
+
+  &:not(:first-child) {
+    display: none;
+  }
+}
+
+.programs__buttons {
+  margin: 0 auto;
 }

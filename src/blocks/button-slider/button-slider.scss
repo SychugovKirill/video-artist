@@ -1,0 +1,27 @@
+.button-slider {
+  display: flex;
+  align-items: center;
+  width: 100%;
+
+  //&:hover  {
+  //  background-color: #FE8730;
+  //}
+}
+
+.button-slider__btn {
+  border: 1px solid #FE8730;
+  border-radius: 3.92045px;
+  background-color: transparent;
+  font-family: $third-font;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  color: #FE8730;
+  padding: 16px;
+  width: 100%;
+
+  &:not(:first-child) {
+    margin-left: 10px;
+  }
+}
