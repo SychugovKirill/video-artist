@@ -1,0 +1,42 @@
+.study-slider {
+  background-image: $main-grad;
+  padding: 30px 15px;
+  overflow: hidden;
+}
+
+.study-slider__list {
+  @include list-reset;
+  display: flex;
+  align-items: center;
+}
+
+.study-slider__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &:not(:first-child) {
+    margin-left: 15px;
+  }
+}
+
+.study-slider__box {
+  border: 4px solid #000000;
+  border-radius: 20px;
+  overflow: hidden;
+  line-height: 0;
+  margin-bottom: 20px;
+  width: 316px;
+}
+
+.study-slider__img {
+  object-fit: cover;
+}
+
+.study-slider__name {
+  font-family: $first-font;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+}
