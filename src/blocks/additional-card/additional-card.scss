@@ -3,16 +3,17 @@
 }
 
 .additional-card__container {
-  border-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
   position: absolute;
   left: 50%;
-  top: 0;
-  transform: translate(-50%, -45%);
+  top: -5px;
+  transform: translateX(-50%);
   z-index: 100;
-  height: 100px;
-  width: 78vw;
+  height: 60px;
+  width: 77.3vw;
   padding-bottom: 19px;
-  background-image: linear-gradient(transparent 45%, $first-color 50%);
+  background-color: $first-color;
 }
 
 .additional-card__box {
@@ -25,7 +26,8 @@
   width: calc(100% - 8px);
   height: calc(100% - 8px);
   z-index: 10;
-  border-radius: 22px;
+  border-bottom-left-radius: 22px;
+  border-bottom-right-radius: 22px;
 }
 
 .additional-card__title {
@@ -52,7 +54,6 @@
 }
 
 .additional-card__wrap {
-
   position: relative;
   overflow: hidden;
 
@@ -74,7 +75,13 @@
   background-color: #FFFFFF;
   border: 4px solid $first-color;
   border-radius: 10px;
-  padding: 75px 10px 25px;
+  padding: 75px 12px 25px 10px;
+}
+
+.additional-card__inner {
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
 }
 
 .additional-card__name {

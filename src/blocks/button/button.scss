@@ -22,7 +22,7 @@
     &::before,
     &::after {
       @include pseudo;
-      height: 26px;
+      height: 22px;
       background-color: #000000;
       border-radius: 4px;
       position: absolute;
@@ -42,7 +42,6 @@
     }
 
     & span {
-      z-index: 10;
       display: block;
       position: relative;
     }
