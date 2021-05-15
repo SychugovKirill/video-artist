@@ -7,6 +7,10 @@
 }
 
 @font-face {
+  @include includeFont(700, $first-font, "Montserrat-Bold");
+}
+
+@font-face {
   @include includeFont(800, $first-font, "Montserrat-ExtraBold");
 }
 

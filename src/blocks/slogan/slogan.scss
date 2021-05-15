@@ -5,6 +5,18 @@
 
 .slogan__title {
   margin-bottom: 15px;
+
+  &--else {
+    font-family: $second-font;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 140%;
+    letter-spacing: 0.02em;
+  }
+
+  & > span {
+    text-transform: uppercase;
+  }
 }
 
 .slogan__text {
@@ -21,6 +33,13 @@
     letter-spacing: 0.17em;
     color: transparent;
     -webkit-text-stroke: 1px black;
+  }
+
+  &--else {
+    font-family: $second-font;
+    font-weight: 700;
+    line-height: 140%;
+    margin-bottom: 20px;
   }
 }
 
