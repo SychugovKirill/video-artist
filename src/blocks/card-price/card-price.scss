@@ -1,0 +1,150 @@
+.card-price {
+  position: relative;
+  border-radius: 40px;
+
+  &::before {
+    @include pseudo;
+    box-shadow: 0px 31px 84px rgba(177, 130, 10, 0.71), 0px 4px 4px rgba(0, 0, 0, 0.25);
+    width: 100%;
+    height: 90%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    border-radius: 40px;
+  }
+}
+
+.card-price__container {
+  overflow: hidden;
+  position: relative;
+  border-radius: 40px;
+}
+
+.card-price__inner {
+  text-shadow: 0px 4px 34px rgba(31, 31, 31, 0.4);
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  position: absolute;
+  left: 50%;
+  top: -40px;
+  transform: translate(-50%);
+  z-index: 10;
+  background-color: #ffffff;
+  width: 68vw;
+  height: 82px;
+  overflow: hidden;
+}
+
+.card-price__wrapper {
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(90deg, #FED230 0%, #FEC030 100%);
+}
+
+.card-price__name {
+  font-family: $first-font;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+  letter-spacing: 0.02em;
+  display: block;
+  position: absolute;
+  z-index: 1000;
+  left: 50%;
+  top: -25px;
+  transform: translate(-50%);
+}
+
+.card-price__box {
+  background-color: #FFFFFF;
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  border-radius: 40px;
+  padding: 50px 10px;
+  padding-top: 90px;
+  position: relative;
+}
+
+.card-price__list {
+   @include list-reset;
+  padding-bottom: 35px;
+  position: relative;
+  margin-bottom: 40px;
+
+  &::after {
+    @include pseudo;
+    width: 69vw;
+    height: 1px;
+    background-color: #4D4D4D;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.card-price__item {
+  font-size: 16px;
+  line-height: 140%;
+  letter-spacing: 0.01em;
+  color: #4D4D4D;
+  padding-left: 15px;
+  position: relative;
+
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  &::before {
+    @include pseudo;
+    width: 5px;
+    min-width: 5px;
+    height: 5px;
+    background-color: #4C4C4C;
+    border-radius: 50%;
+    position: absolute;
+    top: 9px;
+    left: 0;
+  }
+}
+
+.card-price__cost {
+  font-family: $first-font;
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 44px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-shadow: 0px 4px 14px rgba(254, 210, 48, 0.4);
+  margin-bottom: 15px;
+  background: linear-gradient(-45deg, #fed230 0%, #fe8730 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.card-price__instead {
+  font-family: $first-font;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-decoration-line: line-through;
+  color: #4D4D4D;
+  margin-bottom: 40px;
+}
+
+.card-price__button {
+  margin-bottom: 35px;
+}
+
+.card-price__link {
+  font-family: $first-font;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.02em;
+  text-decoration-line: underline;
+  color: #4D4D4D;
+  text-align: center;
+  display: block;
+}

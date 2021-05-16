@@ -34,3 +34,12 @@
   }
 }
 
+@media (max-width: 374px)  {
+  .promo {
+
+    &::before {
+      background-position: 0 -37px;
+    }
+  }
+}
+
