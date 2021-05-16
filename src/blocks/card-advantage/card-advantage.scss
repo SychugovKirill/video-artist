@@ -82,7 +82,7 @@
 
   &::before {
     @include pseudo;
-    background-image: url("/img/tick.svg");
+    background-image: url("/img/icons/svg/tick.svg");
     background-size: cover;
     width: 16px;
     min-width: 16px;

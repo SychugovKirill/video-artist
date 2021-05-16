@@ -4,9 +4,11 @@
   font-size: 18px;
   line-height: 22px;
   letter-spacing: 0.02em;
-  text-shadow: 0 4px 14px rgba(254, 210, 48, 0.4);
-  background: linear-gradient(-45deg, #fed230 0%, #fe8730 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+
+  &--grad {
+    background: linear-gradient(-45deg, #fed230 0%, #fe8730 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 }
 

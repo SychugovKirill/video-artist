@@ -1,5 +1,6 @@
 .for {
   padding: 100px 15px;
+  padding-bottom: 50px;
 }
 
 .for__title {
@@ -59,11 +60,6 @@
 }
 
 .for__name {
-  font-family: $first-font;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 22px;
-  letter-spacing: 0.02em;
   padding: 30px 15px;
   background-color: #ffffff;
   margin: 0 -15px;
