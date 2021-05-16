@@ -1,0 +1,22 @@
+.who-wrote {
+  padding: 40px 15px;
+  overflow: hidden;
+}
+
+.who-wrote__title {
+  margin-bottom: 20px;
+}
+
+.who-wrote__slider {
+  @include list-reset;
+  display: flex;
+  align-items: center;
+}
+
+.who-wrote__slide {
+  min-width: 175px;
+
+  &:not(:first-child) {
+    margin-left: 25px;
+  }
+}
