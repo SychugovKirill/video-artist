@@ -3,6 +3,10 @@
 }
 
 @font-face {
+  @include includeFont(400, $first-font, "Montserrat-Regular");
+}
+
+@font-face {
   @include includeFont(600, $first-font, "Montserrat-SemiBold");
 }
 

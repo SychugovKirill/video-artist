@@ -65,10 +65,78 @@
 
   &:active {
     color: rgba(255, 255, 255, 0.6);
+
+    & svg {
+      fill: rgba(255, 255, 255, 0.6);
+    }
   }
 
   &:active > p > span::before {
     opacity: 0.6;
     transition: 0.3s all;
+  }
+
+  &--else {
+    border-color: transparent;
+    position: relative;
+    background-clip: padding-box;
+    background-color: #ffffff;
+
+    &::before {
+      @include pseudo;
+      position: absolute;
+      border-radius: 3.92045px;
+      top: 0;
+      margin: -1px;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+      background-image: linear-gradient(-90deg, #6E07DD 0%, #FEB80C 100%);
+    }
+
+    & > p {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-image: linear-gradient(267.74deg, #6E07DD 0%, #FEB80C 100%);
+
+      & > svg {
+        fill: #ffffff;
+        width: 24px;
+        height: 24px;
+        transition: 0.3s all;
+      }
+
+      & span {
+        margin-left: 22px;
+        font-size: 18px;
+        line-height: 21px;
+      }
+
+      & span::before {
+        display: none;
+      }
+
+      &::after {
+        display: none;
+      }
+
+      &::before {
+        box-shadow: none;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        transform: inherit;
+        background-color: rgba(0, 0, 0, 0);
+        transition: 0.3s all;
+      }
+    }
+
+    &:hover p::before {
+      background-color: rgba(0, 0, 0, 0.2);
+    }
   }
 }
