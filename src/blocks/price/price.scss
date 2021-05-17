@@ -20,3 +20,10 @@
 .price__list {
   @include list-reset;
 }
+
+.price__item {
+
+  &:not(:last-child) {
+    margin-bottom: 80px;
+  }
+}
