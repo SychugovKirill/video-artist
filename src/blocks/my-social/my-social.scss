@@ -67,3 +67,10 @@
   letter-spacing: 0.02em;
   margin-bottom: 20px;
 }
+
+@media (min-width: 768px) {
+  .my-social {
+    padding: 0 30px;
+    padding-bottom: 50px;
+  }
+}

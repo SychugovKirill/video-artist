@@ -80,6 +80,7 @@
   letter-spacing: 0.01em;
   color: #4D4D4D;
   word-break: break-word;
+  display: flex;
 
   &::before {
     @include pseudo;

@@ -43,3 +43,9 @@
   letter-spacing: 0.01em;
   color: #4D4D4D;
 }
+
+@media (min-width: 768px) {
+  .footer {
+    padding: 80px 30px 40px;
+  }
+}

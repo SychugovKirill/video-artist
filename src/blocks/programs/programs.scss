@@ -34,3 +34,10 @@
 .programs__buttons {
   margin: 0 auto;
 }
+
+@media (min-width: 768px) {
+  .programs {
+    padding: 80px 30px;
+    padding-bottom: 40px;
+  }
+}

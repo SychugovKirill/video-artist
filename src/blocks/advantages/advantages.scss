@@ -19,3 +19,24 @@
     margin-bottom: 20px;
   }
 }
+
+@media (min-width: 768px) {
+  .advantages {
+    padding: 30px;
+  }
+
+  .advantages__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 40px;
+  }
+
+  .advantages__item {
+    min-height: 332px;
+
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
+  }
+
+}

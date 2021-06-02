@@ -44,3 +44,9 @@
 .reviews__img {
   box-shadow: 0px 4px 44px rgba(0, 0, 0, 0.15);
 }
+
+@media (min-width: 768px) {
+  .reviews {
+    padding: 80px 30px;
+  }
+}

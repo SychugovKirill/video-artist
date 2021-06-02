@@ -49,3 +49,10 @@
     font-weight: 700;
   }
 }
+
+@media (min-width: 768px)  {
+  .skills {
+    padding: 50px 30px;
+    padding-bottom: 40px;
+  }
+}

@@ -46,3 +46,10 @@
   letter-spacing: 0.01em;
   color: #4D4D4D;
 }
+
+@media (min-width: 768px) {
+  .questions {
+    padding: 80px 30px;
+    padding-bottom: 40px;
+  }
+}
