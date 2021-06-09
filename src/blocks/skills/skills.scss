@@ -55,4 +55,18 @@
     padding: 50px 30px;
     padding-bottom: 40px;
   }
+
+  .skills__list {
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 40px;
+  }
+
+  .skills__item {
+
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
+  }
 }

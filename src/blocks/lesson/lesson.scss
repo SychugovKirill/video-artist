@@ -53,3 +53,9 @@
     font-weight: 900;
   }
 }
+
+@media (min-width: 768px) {
+  .lesson__list {
+    margin-bottom: 30px;
+  }
+}

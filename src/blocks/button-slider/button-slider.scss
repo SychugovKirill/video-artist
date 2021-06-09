@@ -25,3 +25,12 @@
     margin-left: 10px;
   }
 }
+
+@media (min-width: 768px) {
+  .button-slider__btn {
+
+    &:not(:first-child) {
+      margin-left: 30px;
+    }
+  }
+}

@@ -83,7 +83,32 @@
 
 @media (min-width: 768px) {
   .for {
-    padding: 100px 30px;
+    padding: 100px 0;
     padding-bottom: 50px;
+  }
+
+  .for__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .for__item {
+    flex-basis: 100%;
+    padding: 80px 15px 50px;
+    border-top-right-radius: 90px;
+    border-bottom-right-radius: 90px;
+
+    &:not(:last-child) {
+      margin-bottom: 0;
+      margin-right: 145px;
+    }
+
+    &:nth-child(2) {
+      padding-top: 80px;
+      border-top-right-radius: 0;
+      border-top-left-radius: 90px;
+      border-bottom-left-radius: 90px;
+      border-bottom-right-radius: 0;
+    }
   }
 }

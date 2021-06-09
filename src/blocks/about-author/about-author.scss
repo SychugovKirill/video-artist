@@ -108,4 +108,15 @@
     padding: 50px 30px;
     padding-bottom: 0;
   }
+
+  .about-author__img {
+    margin: 0 -30px;
+    width: calc(100% + 60px);
+  }
+
+  .about-author__bottom {
+    margin: 0 -30px;
+    width: calc(100% + 60px);
+    padding: 100px;
+  }
 }
