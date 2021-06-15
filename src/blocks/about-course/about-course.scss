@@ -96,15 +96,34 @@
 
 @media (min-width: 1024px) {
   .about-course {
-    padding-top: 95px;
+    padding-top: 100px;
+    padding-bottom: 95px;
     padding-right: calc(50% - 480px);
     padding-left: calc(50% - 480px);
+    background: linear-gradient(90deg, #F2F2F2 0%, rgba(247, 247, 247, 0) 100%);
+    position: relative;
+
+    &::before {
+      content: "Видео";
+      position: absolute;
+      left: -25px;
+      top: 90px;
+      transform: rotate(-180deg);
+      font-weight: 800;
+      font-size: 250px;
+      line-height: 305px;
+      letter-spacing: 0.02em;
+      color: #FFFFFF;
+      font-family: $first-font;
+      writing-mode: tb-rl;
+    }
   }
 
   .about-course__list {
     grid-template-columns: repeat(4, min-content);
     padding-left: 0;
-    grid-column-gap: 133px;
+    grid-column-gap: 90px;
+    margin-bottom: 130px;
   }
 
   .about-course__title {
@@ -129,6 +148,30 @@
   .about-course__text {
     font-size: 16px;
   }
+
+  .about-course__box {
+    display: flex;
+    align-items: center;
+  }
+
+  .about-course__video {
+    margin: 0;
+    padding: 0;
+    width: 50%;
+  }
+
+  .about-course__wrap {
+    max-width: 43.3%;
+    margin-left: auto;
+  }
+
+  .about-course__subtitle {
+    margin-bottom: 30px;
+  }
+
+  .about-course__button {
+    width: 352px;
+  }
 }
 
 @media (min-width: 1280px) {
@@ -141,5 +184,9 @@
   .about-course {
     padding-right: calc(50% - 752px);
     padding-left: calc(50% - 752px);
+  }
+
+  .about-course__list {
+    grid-column-gap: 133px;
   }
 }
