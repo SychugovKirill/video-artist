@@ -93,3 +93,18 @@
     margin-top: 4px;
   }
 }
+
+@media (min-width: 1024px) {
+  .card-advantage__name {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .card-advantage__box {
+    margin-bottom: 17px;
+  }
+
+  .card-advantage__inner {
+    padding-bottom: 25px;
+  }
+}
