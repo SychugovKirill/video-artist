@@ -35,8 +35,48 @@
   }
 }
 
-@media (min-width: 768px)  {
+@media (min-width: 768px) {
   .slogan {
     padding: 30px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .slogan {
+    padding-right: calc(50% - 490px);
+    padding-left: calc(50% - 490px);
+    padding-top: 60px;
+    padding-bottom: 55px;
+    display: flex;
+    align-items: center;
+  }
+
+  .slogan__title {
+    font-size: 36px;
+    line-height: 44px;
+    margin-bottom: 0;
+  }
+
+  .slogan__text {
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 0;
+
+    & > span {
+      font-size: 36px;
+      line-height: 44px;
+    }
+  }
+
+  .slogan__button {
+    margin-left: auto;
+    width: 352px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .slogan {
+    padding-right: calc(50% - 660px);
+    padding-left: calc(50% - 660px);
   }
 }

@@ -80,6 +80,17 @@
     padding-bottom: 80px;
     padding-right: calc(50% - 490px);
     padding-left: calc(50% - 490px);
+    position: relative;
+
+    &::before {
+      @include pseudo;
+      background-image: url("/img/skills__background.png");
+      position: absolute;
+      left: 80px;
+      top: 130px;
+      width: 208px;
+      height: 218px;
+    }
   }
 
   .skills__title {
