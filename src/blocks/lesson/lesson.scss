@@ -1,61 +1,74 @@
 .lesson__heading {
-  font-family: $first-font;
+  margin-bottom: 35px;
   font-weight: 600;
   font-size: 18px;
   line-height: 140%;
+  font-family: $first-font;
   letter-spacing: 0.02em;
-  margin-bottom: 35px;
-
 }
 
 .lesson__list {
   @include list-reset;
   counter-reset: my-sec-counter;
-  margin-bottom: 10px;
 }
 
 .lesson__item {
-  font-size: 16px;
-  line-height: 140%;
-  letter-spacing: 0.01em;
-  color: #4D4D4D;
-  padding-left: 28px;
 
   position: relative;
+  padding-left: 28px;
+  font-size: 16px;
+  line-height: 140%;
+  color: #4d4d4d;
+  letter-spacing: 0.01em;
 
   &:not(:last-child) {
     margin-bottom: 20px;
   }
 
   &::before {
-    counter-increment: my-sec-counter;
     content: counter(my-sec-counter) ". ";
+    position: absolute;
+    top: 0;
+    left: 0;
     font-weight: bold;
     font-size: 16px;
     line-height: 140%;
+    color: #fe8730;
     letter-spacing: 0.01em;
-    color: #FE8730;
-    position: absolute;
-    left: 0;
-    top: 0;
+    counter-increment: my-sec-counter;
   }
 }
 
 .lesson__text {
-  font-family: $first-font;
+  margin-top: 10px;
   font-weight: 600;
   font-size: 18px;
   line-height: 140%;
+  font-family: $first-font;
   letter-spacing: 0.02em;
 
   & > span {
-    color: $first-color;
     font-weight: 900;
+    color: $first-color;
   }
 }
 
 @media (min-width: 768px) {
+  .lesson__text {
+    margin-top: 30px;
+  }
+}
+
+@media (min-width: 1024px) {
   .lesson__list {
-    margin-bottom: 30px;
+    column-count: 2;
+  }
+
+  .lesson__heading {
+    margin-bottom: 60px;
+  }
+
+  .lesson__text {
+    max-width: 460px;
   }
 }
