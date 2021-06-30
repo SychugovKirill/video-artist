@@ -48,6 +48,38 @@
   .include__item {
     flex-basis: 30%;
     margin: 50px 10px;
+
+    &:not(:last-child) {
+      margin-bottom: 50px;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .include {
+    padding-top: 160px;
+    padding-right: calc(50% - 490px);
+    padding-left: calc(50% - 490px);
   }
 
+  .include__title {
+    margin-bottom: 100px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .include {
+    @include page-wrapper;
+  }
+
+  .include__item {
+    flex-basis: 360px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .include {
+    padding-right: calc(50% - 750px);
+    padding-left: calc(50% - 750px);
+  }
 }
