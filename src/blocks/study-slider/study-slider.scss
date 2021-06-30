@@ -47,3 +47,89 @@
     padding: 30px;
   }
 }
+
+@media (min-width: 1024px) {
+  .study-slider {
+    background-image: none;
+    padding-top: 100px;
+    padding-right: calc(50% - 490px);
+    padding-left: calc(50% - 490px);
+    position: relative;
+
+    & > .study-slider__wrapper {
+      background-image: linear-gradient(90deg, #FED230 0%, #FEC030 100%);
+      width: 100%;
+      height: 27.24vw;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 0;
+      right: 0;
+      z-index: -1;
+
+      &::after {
+        @include pseudo;
+        background-position: 30px center;
+        background-image: url("/img/circles-lots.png");
+        background-size: cover;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+
+
+  }
+
+  .study-slider__list {
+    flex-wrap: wrap;
+    column-gap: 37px;
+    row-gap: 40px;
+    justify-content: center;
+  }
+
+  .study-slider__item {
+    width: 30%;
+
+    &:not(:first-child) {
+      margin-left: 0;
+    }
+  }
+
+  .study-slider__box {
+    width: 100%;
+    height: inherit;
+  }
+
+  .study-slider__name {
+    font-size: 24px;
+    line-height: 29px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .study-slider {
+    @include page-wrapper;
+  }
+}
+
+@media (min-width: 1600px) {
+  .study-slider {
+    padding-right: calc(50% - 747px);
+    padding-left: calc(50% - 747px);
+  }
+
+  .study-slider__item {
+    width: 31.5%;
+  }
+}
+
+@media (min-width: 1920px) {
+  .study-slider {
+    padding-right: calc(50% - 847px);
+    padding-left: calc(50% - 847px);
+  }
+}
