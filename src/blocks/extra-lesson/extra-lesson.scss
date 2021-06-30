@@ -3,8 +3,12 @@
 }
 
 .extra-lesson__title {
-  text-align: center;
   margin-bottom: 80px;
+  text-align: center;
+  text-shadow: 0 4px 14px rgba(254, 210, 48, 0.4);
+  background: $main-grad;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .extra-lesson__list {
@@ -20,5 +24,43 @@
 @media (min-width: 768px) {
   .extra-lesson {
     padding: 45px 30px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .extra-lesson {
+    padding-top: 10px;
+    padding-right: calc(50% - 490px);
+    padding-left: calc(50% - 490px);
+  }
+
+  .extra-lesson__title {
+    margin-bottom: 100px;
+  }
+
+  .extra-lesson__item {
+    &:not(:last-child) {
+      margin-bottom: 80px;
+    }
+  }
+}
+
+@media (min-width: 1280px) {
+  .extra-lesson {
+    @include page-wrapper;
+  }
+}
+
+@media (min-width: 1600px) {
+  .extra-lesson {
+    padding-right: calc(50% - 750px);
+    padding-left: calc(50% - 750px);
+  }
+}
+
+@media (min-width: 1920px) {
+  .extra-lesson {
+    padding-right: calc(50% - 847px);
+    padding-left: calc(50% - 847px);
   }
 }
