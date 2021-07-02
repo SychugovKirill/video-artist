@@ -7,6 +7,10 @@
   text-align: center;
   margin-bottom: 20px;
 
+  & br {
+    display: none;
+  }
+
   & > b {
     text-shadow: none;
   }
@@ -118,5 +122,200 @@
     margin: 0 -30px;
     width: calc(100% + 60px);
     padding: 100px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .about-author {
+    padding-top: 90px;
+    padding-bottom: 270px;
+    padding-right: calc(50% - 490px);
+    padding-left: calc(50% - 490px);
+    position: relative;
+
+    &::before {
+      content: "";
+      width: 100%;
+      height: 170px;
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(254, 210, 48, 0.8);
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 10%;
+      top: 10px;
+      background-image: url("/img/two-circles.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 229px;
+      height: 212px;
+    }
+  }
+
+  .about-author__title {
+    max-width: 650px;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 35px;
+    font-size: 36px;
+    line-height: 44px;
+
+    & br {
+      display: block;
+    }
+
+    & b {
+      font-size: 48px;
+      line-height: 59px;
+    }
+  }
+
+  .about-author__desc {
+    max-width: 845px;
+    margin-bottom: 50px;
+  }
+
+  .about-author__subject {
+    margin-bottom: 40px;
+  }
+
+  .about-author__list {
+    padding-left: 20px;
+  }
+
+  .about-author__item {
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: 0.01em;
+    color: #4D4D4D;
+    position: relative;
+    padding-left: 32px;
+
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+
+  .about-author__wrap {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .about-author__img {
+    width: 450px;
+    border-radius: 40px 40px 39px 39px;
+    margin: 0;
+    margin-left: 10px;
+
+  }
+
+  .about-author__name {
+    display: block;
+    writing-mode: tb-rl;
+    transform: rotate(-180deg);
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 44px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    font-family: $first-font;
+  }
+
+  .about-author__bottom {
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -7%;
+    margin: 0;
+    padding: 20px;
+    border: none;
+    background-color: transparent;
+    max-width: 980px;
+    margin: 0 auto;
+    border: 1px solid #F0F0F0;
+    border-radius: 15px;
+
+    &::before,
+    &::after {
+      @include pseudo;
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      height: 20%;
+    }
+
+    &::before {
+      box-shadow: 0px 31px 64px rgba(205, 149, 5, 0.11);
+      border-radius: 10px;
+      width: 90%;
+    }
+
+    &::after {
+      box-shadow: 0px 31px 114px rgba(140, 112, 40, 0.11);
+      border-radius: 10px;
+      width: 58%;
+    }
+  }
+
+  .about-author__wrapper {
+    margin: 0;
+    position: relative;
+    display: flex;
+    padding: 50px 70px;
+  }
+
+  .about-author__inner {
+    margin-left: 55px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .about-author {
+    @include page-wrapper;
+    padding-bottom: 180px;
+  }
+
+  .about-author__bottom {
+    max-width: 1125px;
+  }
+
+  .about-author__img {
+    width: 550px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .about-author {
+    padding-right: calc(50% - 755px);
+    padding-left: calc(50% - 755px);
+    padding-bottom: 0;
+  }
+
+  .about-author__img {
+    width: 650px;
+    height: 965px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .about-author {
+    padding-right: calc(50% - 755px);
+    padding-left: calc(50% - 755px);
+  }
+
+  .about-author__img {
+    margin-right: -95px;
+  }
+
+  .about-author__list {
+    padding-left: 70px;
   }
 }
