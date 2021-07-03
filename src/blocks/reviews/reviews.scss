@@ -50,3 +50,77 @@
     padding: 80px 30px;
   }
 }
+
+@media (min-width: 1024px) {
+  .reviews {
+    padding-top: 100px;
+    padding-bottom: 80px;
+    padding-right: calc(50% - 510px);
+    padding-left: calc(50% - 510px);
+  }
+
+  .reviews__title {
+    margin-bottom: 100px;
+  }
+
+  .reviews__list {
+    padding: 0;
+    width: inherit;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    position: relative;
+  }
+
+  .reviews__item {
+    width: 30%;
+
+    &:not(:first-child) {
+      margin-left: 0;
+    }
+
+    &:first-child {
+      margin-top: 65px;
+    }
+
+    &:nth-child(3) {
+      width: 23%;
+      margin-right: 40px;
+    }
+
+    &:nth-child(4) {
+      margin-top: 100px;
+    }
+
+    &:nth-child(6) {
+      //position: absolute;
+      //left: 50%;
+      //transform: translateX(-50%);
+      //bottom: -50px;
+      order: 2;
+      margin: 0 auto;
+      margin-top: -70px;
+    }
+  }
+
+  .reviews__img {
+    box-shadow: none;
+  }
+
+  .reviews__box {
+    margin: 0;
+  }
+}
+
+@media (min-width: 1440px) {
+  .reviews {
+    padding-right: calc(50% - 660px);
+    padding-left: calc(50% - 660px);
+  }
+
+  .reviews__item {
+    &:nth-child(6) {
+      margin-top: -130px;
+    }
+  }
+}
