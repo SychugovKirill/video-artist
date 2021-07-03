@@ -167,3 +167,42 @@
     margin-bottom: 8px;
   }
 }
+
+@media (min-width: 1024px) {
+  .card-price__name {
+    text-shadow: 0px 4px 34px rgba(31, 31, 31, 0.4);
+  }
+
+  .card-price__list {
+
+    &::after {
+      width: 13.13vw;
+    }
+  }
+
+  .card-price__inner {
+    width: 19vw;
+  }
+
+  .card-price__button {
+    margin: 0 auto;
+    margin-bottom: 35px;
+    max-width: 352px;
+  }
+
+  .card-price__link {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .card-price__box {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .card-price__inner {
+    width: 13vw;
+  }
+}

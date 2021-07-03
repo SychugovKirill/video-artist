@@ -33,3 +33,51 @@
     padding: 30px;
   }
 }
+
+@media (min-width: 1024px) {
+  .price {
+    padding-right: calc(50% - 834px);
+    padding-left: calc(50% - 834px);
+    padding-top: 90px;
+    padding-bottom: 150px;
+    position: relative;
+
+    &::before {
+      content: "";
+      background-image: url("/img/camera-big.png");
+      mix-blend-mode: darken;
+      opacity: 0.5;
+      width: 765px;
+      position: absolute;
+      left: 80px;
+      bottom: 0;
+      height: 689px;
+    }
+  }
+
+  .price__desc {
+    margin-bottom: 150px;
+  }
+
+  .price__list {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    column-gap: 43px;
+    row-gap: 40px;
+    justify-content: center;
+  }
+
+  .price__item {
+    width: 27.45vw;
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media (min-width: 1920px) {
+  .price__item {
+    width: 527px;
+  }
+}
