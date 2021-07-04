@@ -93,10 +93,27 @@
     &::before {
       display: none;
     }
+
+    // nav footer
+    &--footer {
+
+      & .nav__list {
+        margin: -10px -20px;
+      }
+
+      & .nav__item {
+        margin: 10px 20px;
+
+        &:not(:last-child) {
+          margin-bottom: 10px;
+        }
+      }
+    }
   }
 
   .nav__list {
     flex-direction: row;
+    margin: -10px -10px;
   }
 
   .nav__item {
