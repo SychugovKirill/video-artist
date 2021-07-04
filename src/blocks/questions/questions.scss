@@ -60,6 +60,18 @@
     padding-left: calc(50% - 380px);
     padding-top: 100px;
     padding-bottom: 140px;
+    position: relative;
+
+    &::before {
+      @include pseudo;
+      background-size: contain;
+      background-image: url("/img/two-circles.png");
+      width: 243px;
+      height: 203px;
+      position: absolute;
+      top: 20px;
+      right: 260px;
+    }
   }
 
   .questions__title {

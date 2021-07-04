@@ -52,10 +52,10 @@
 
 @media (min-width: 1024px) {
   .footer {
-    padding-right: calc(50% - 780px);
-    padding-left: calc(50% - 780px);
-    padding-bottom: 20px;
-  }
+     padding-right: calc(50% - 490px);
+     padding-left: calc(50% - 490px);
+     padding-bottom: 20px;
+   }
 
   .footer__top {
     flex-direction: row;
@@ -73,5 +73,29 @@
   .footer__logo {
     margin-bottom: 0;
     width: 281px;
+    min-width: 281px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .footer {
+    @include page-wrapper;
+    padding-bottom: 20px;
+  }
+
+
+}@media (min-width: 1600px) {
+  .footer {
+    padding-right: calc(50% - 680px);
+    padding-left: calc(50% - 680px);
+    padding-bottom: 20px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .footer {
+    padding-right: calc(50% - 780px);
+    padding-left: calc(50% - 780px);
+    padding-bottom: 20px;
   }
 }

@@ -1,6 +1,7 @@
 .nav {
   padding: 85px 30px;
   padding-bottom: 140px;
+  overflow: hidden;
   background: linear-gradient(90deg, #fed230 0%, #fec030 100%);
 
   &::before {
@@ -98,11 +99,11 @@
     &--footer {
 
       & .nav__list {
-        margin: -10px -20px;
+        margin: -10px -15px;
       }
 
       & .nav__item {
-        margin: 10px 20px;
+        margin: 10px 15px;
 
         &:not(:last-child) {
           margin-bottom: 10px;
