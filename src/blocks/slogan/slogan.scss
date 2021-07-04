@@ -56,6 +56,11 @@
     padding-bottom: 55px;
     display: flex;
     align-items: center;
+
+    &--bottom {
+      padding-top: 100px;
+      padding-bottom: 90px;
+    }
   }
 
   .slogan__title {
@@ -76,6 +81,11 @@
     & > span {
       font-size: 36px;
       line-height: 44px;
+    }
+
+    &--bottom {
+      font-size: 18px;
+      line-height: 22px;
     }
   }
 

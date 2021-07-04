@@ -1,0 +1,20 @@
+@media (min-width: 1024px) {
+  .video-bottom {
+    padding-right: calc(50% - 480px);
+    padding-left: calc(50% - 480px);
+  }
+}
+
+@media (min-width: 1280px) {
+  .video-bottom {
+    padding-right: calc(50% - 550px);
+    padding-left: calc(50% - 550px);
+  }
+}
+
+@media (min-width: 1600px) {
+  .video-bottom {
+    padding-right: calc(50% - 660px);
+    padding-left: calc(50% - 660px);
+  }
+}
